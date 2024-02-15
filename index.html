@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">calculator</h1>
+        <p id="description"> calculator in JavaScript</p>
+        <div class="calculator">
+            <input type="text" id="result" class="form-control" readonly>
+            <div class="allbtn">
+                <div class="row">
+                    <button class="btn btn-primary man" id="clear" onclick="handleClear()">c</button>
+                    <button class="btn btn-primary man"  onclick="handleBackspace()"><i class="fa fa-arrow-left"></i></button>
+                    <button class="btn btn-primary man" onclick="handleButtonClick('.')">.</button>
+                    <button class="btn btn-primary man" id="multiply" onclick="handleButtonClick('*')">*</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary man"  id="7" onclick="handleButtonClick('7')">7</button>
+                    <button class="btn btn-primary man"  id="8" onclick="handleButtonClick('8')">8</button>
+                    <button class="btn btn-primary man " id="9" onclick="handleButtonClick('9')">9</button>
+                    
+                    <button class="btn btn-primary man" id="divide" onclick="handleButtonClick('/')">/</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary man"  id="4" onclick="handleButtonClick('4')">4</button>
+                    <button class="btn btn-primary man"  id="5" onclick="handleButtonClick('5')">5</button>
+                    <button class="btn btn-primary man"  id="6" onclick="handleButtonClick('6')">6</button>
+                    <button class="btn btn-primary man"  id="subtract" onclick="handleButtonClick('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary man"  id="1" onclick="handleButtonClick('1')">1</button>
+                    <button class="btn btn-primary man"  id="2" onclick="handleButtonClick('2')">2</button>
+                    <button class="btn btn-primary man"  id="3" onclick="handleButtonClick('3')">3</button>
+                    <button class="btn btn-primary man" id="add" onclick="handleButtonClick('+')">+</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary man1"  id="0" onclick="handleButtonClick('0')">0</button>
+            <button class="btn btn-primary man1"  id="00" onclick="handleDoubleClick()">00</button>
+          
+            <button class="btn btn-primary man1" id="equal" onclick="handleCalculate()">=</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
